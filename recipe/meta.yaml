@@ -16,7 +16,6 @@ build:
   merge_build_host: true  # [win]
   number: 0
   noarch: generic
-
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,26 +24,26 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
-
   host:
     - r-base
+    - r-hiclimr
+    - r-rfast
     - r-data.table
     - r-igraph
     - r-magrittr
     - r-plyr
     - r-reshape2
-    - r-shiny
     - r-som
     - r-visnetwork
-
   run:
     - r-base
+    - r-hiclimr
+    - r-rfast
     - r-data.table
     - r-igraph
     - r-magrittr
     - r-plyr
     - r-reshape2
-    - r-shiny
     - r-som
     - r-visnetwork
 
@@ -55,10 +54,9 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=wTO
-  license: GPL-2.0-or-later
+  license: GPL-2.0-only
   summary: Computes the Weighted Topological Overlap with positive and negative signs (wTO) networks given a data frame containing the mRNA count/ expression/ abundance per sample, and a vector containing the interested nodes of interaction (a subset of the elements of the full data frame). It also computes the cut-off threshold
     or p-value based on the individuals bootstrap or the values reshuffle per individual. It also allows the construction of a consensus network, based on multiple wTO networks. The package includes a visualization tool for the networks.  More about the methodology can be found at <arXiv:1711.04702>.
-
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
