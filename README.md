@@ -3,7 +3,7 @@ About r-wto
 
 Home: https://CRAN.R-project.org/package=wTO
 
-Package license: GPL-2.0-or-later
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-wto-feedstock/blob/main/LICENSE.txt)
 
