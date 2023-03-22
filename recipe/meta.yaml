@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/wTO_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/wTO/wTO_{{ version }}.tar.gz
-  sha256: 354856a9bff2921b424b7a9aa2520790e67777e531d7fc27505ae02627ad51bc
+  sha256: 7b20ed72163253175839ecd755d8e66207f85c01363c1f9330777f0111c9ac30
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
