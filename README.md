@@ -1,11 +1,11 @@
-About r-wto
-===========
+About r-wto-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-wto-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=wTO
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-wto-feedstock/blob/main/LICENSE.txt)
 
 Summary: Computes the Weighted Topological Overlap with positive and negative signs (wTO) networks given a data frame containing the mRNA count/ expression/ abundance per sample, and a vector containing the interested nodes of interaction (a subset of the elements of the full data frame). It also computes the cut-off threshold or p-value based on the individuals bootstrap or the values reshuffle per individual. It also allows the construction of a consensus network, based on multiple wTO networks. The package includes a visualization tool for the networks.  More about the methodology can be found at <arXiv:1711.04702>.
 
